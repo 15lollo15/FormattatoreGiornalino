@@ -5,12 +5,9 @@ import com.groupdocs.conversion.options.convert.PdfConvertOptions;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class DocConverter {
     private static final int MAX_PAGE = 3;

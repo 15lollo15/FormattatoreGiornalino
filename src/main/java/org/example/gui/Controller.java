@@ -1,6 +1,5 @@
 package org.example.gui;
 
-import com.fasterxml.jackson.annotation.F;
 import org.example.DocConverter;
 import org.example.PDFConverter;
 import org.example.SplitImagesGenerator;
@@ -86,7 +85,6 @@ public class Controller {
                 "Conversion completed",
                 "Success",
                 JOptionPane.INFORMATION_MESSAGE);
-        return;
 
 
     }

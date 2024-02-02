@@ -31,10 +31,8 @@ public class PDFConverter{
     public void imagesToPdf(File[] images, File pdfFile) throws IOException {
         pdfFile.createNewFile();
         PDDocument pdfDocument = new PDDocument();
-        int i = 0;
         for (File imgF : images) {
             addAImagePage(imgF, pdfDocument);
-
         }
         pdfDocument.save(pdfFile);
     }
@@ -62,8 +60,7 @@ public class PDFConverter{
 
     public BufferedImage renderAPage(PDDocument pdfDocument, float dpi, int pageIndex) throws IOException {
         PDFRenderer pdfRenderer = new PDFRenderer(pdfDocument);
-        BufferedImage bufferedImage = pdfRenderer.renderImageWithDPI(pageIndex, dpi);
-        return  bufferedImage;
+        return pdfRenderer.renderImageWithDPI(pageIndex, dpi);
     }
 
 }
